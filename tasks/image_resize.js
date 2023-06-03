@@ -6,7 +6,7 @@ const argv = require('yargs').argv;
 module.exports = function image_resize() {
     const size = Number(argv.size);
     const fileName = argv.file;
-    return gulp.src(`dist/img/${fileName}`)
+    return gulp.src(`src/assets/img/${fileName}`)
         .pipe(imageResize({
           width : size,
           height : size,
@@ -14,5 +14,5 @@ module.exports = function image_resize() {
           upscale : false
         }))
         .pipe(rename({suffix: `@${size}px`}))
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('src/assets/img'));
 };

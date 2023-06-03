@@ -7,5 +7,5 @@ module.exports = function gfonts() {
             cssFilename: "fonts.css",
             fontDisplayType: "swap"
         }))
-        .pipe(gulp.dest("dist/google/fonts"));
+        .pipe(gulp.dest("dist/fonts/google"));
 }

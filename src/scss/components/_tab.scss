@@ -1,0 +1,46 @@
+.tab {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover:not(.tab--actived) {
+        svg path {
+            fill: #424551;
+        }
+
+        span {
+            color: #424551;
+        }
+    }
+}
+
+.tab svg {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+
+    path {
+        fill: #9A9CA5;
+    }
+}
+
+.tab span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #9A9CA5;
+}
+
+.tab--actived {
+    border: 1px solid #FF3F3A;
+    border-radius: 4px;
+
+    svg path {
+        fill: #FF3F3A;
+    }
+
+    span {
+        color: #FF3F3A;
+    }
+}

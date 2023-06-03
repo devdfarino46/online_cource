@@ -1,0 +1,184 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="libs/normalize.min.css")
+        link(rel="stylesheet", href="fonts/google/fonts.css")
+
+        link(rel="stylesheet", href="css/main.min.css")
+        title Online Cource
+    body
+        nav.nav.nav--light
+            .nav__container.container
+                button.nav__open_menu-btn
+                    include assets/var-icons/open-menu.svg
+
+                img.nav__logo.logo(src="img/logo.svg", alt="CREATEX", width="130px", height="22px")
+
+                ul.nav__links-wrapper 
+                    li.nav__links-item
+                        a.nav__link(href="#") About Us
+                    li.nav__links-item
+                        a.nav__link(href="#") Courses
+                    li.nav__links-item
+                        a.nav__link(href="#") Events
+                    li.nav__links-item
+                        a.nav__link(href="#") Blog
+                    li.nav__links-item
+                        a.nav__link(href="#") Contacts
+
+                .nav__cta-wrapper 
+                    button.nav__cta-get_consultation-btn.btn__solid.btn__large.btn 
+                        span Get consultation
+                    button.nav__cta-account-btn
+                        include assets/var-icons/profile.svg
+                        span Log in / Register
+
+        header.header 
+            .header__container.container 
+                .header__main-wrapper
+                    .header__main-play_video-wrapper
+                        button.play-btn-small.play-btn
+                            img(src="img/icons/play-btn.svg", alt="Play video", width="52", height="52")
+                        p.header__main-play_video-label Play showreel
+                    h1.header__main-title Enjoy studying with Createx Online Courses
+                    .header__main-buttons-wrapper
+                        button.btn__outline.btn__large.btn
+                            span About us
+                        button.btn__solid.btn__large.btn 
+                            span Explore courses
+                
+                .header__statistics-wrapper 
+                    p.header__statistics-item
+                        span.header__statistics-item-num 1200
+                        | Students graduated
+                    img.header__statistics-ellipse(src="img/icons/ellipse.svg", alt="", width="8", height="8")
+                    p.header__statistics-item
+                        span.header__statistics-item-num 84
+                        | Completed courses
+                    img.header__statistics-ellipse(src="img/icons/ellipse.svg", alt="", width="8", height="8")
+                    p.header__statistics-item
+                        span.header__statistics-item-num 16
+                        | Qualified tutors
+                    img.header__statistics-ellipse(src="img/icons/ellipse.svg", alt="", width="8", height="8")
+                    p.header__statistics-item
+                        span.header__statistics-item-num 5
+                        | Years of experience
+
+        main.content
+            section.content__who_we_are-section.content__section
+                .content__who_we_are-section-container.content__section-container.container
+                    picture.content__who_we_are-section-picture
+                        source(media="(max-width: 1180px)", srcset="img/women-work@515px.webp")
+                        img(src="img/women-work.webp", alt="", width="705", height="560")
+                    .content__who_we_are-section-main-wrapper
+                        h2.content__section-title
+                            p.content__section-title-small Who we are
+                            p.content__section-title-large Why Createx?
+
+                        ul.content__who_we_are-section-list 
+                            li.content__who_we_are-section-item
+                                span A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                            li.content__who_we_are-section-item
+                                span Vulputate placerat amet pulvinar lorem nisl.
+                            li.content__who_we_are-section-item
+                                span Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                            li.content__who_we_are-section-item
+                                span Etiam duis lobortis in fames ultrices commodo nibh.
+                            li.content__who_we_are-section-item
+                                span Tincidunt sagittis neque sem ac eget.
+                            li.content__who_we_are-section-item
+                                span Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+
+                        button.btn__solid.btn 
+                            span More about us
+
+            section.content__ready_to_learn-section.content__section
+                .content__ready_to_learn-section-container.content__section-container.container
+                    .content__ready_to_learn-section-title-wrapper
+                        h2.content__section-title
+                            p.content__section-title-small Who we are
+                            p.content__section-title-large Why Createx?
+
+                        button.btn__outline.btn__large.btn 
+                            span View all courses
+
+                    .content__ready_to_learn-section-cards-wrapper
+                        a.content__ready_to_learn-section-card.card(href="#") 
+                            img.card__picture(src="img/cards/j-bell.webp", alt="", width="214", height="214")
+                            .card__main-wrapper
+                                p.card__specialty.card__specialty-marketing Marketing
+                                p.card__title The Ultimate Google Ads Training Course
+                                p.card__name-wrapper
+                                    span.card__price $100
+                                    span.card__name  | by Jerome Bell
+
+                        a.content__ready_to_learn-section-card.card(href="#") 
+                            img.card__picture(src="img/cards/m-mckiney.webp", alt="", width="214", height="214")
+                            .card__main-wrapper
+                                p.card__specialty.card__specialty-management Management
+                                p.card__title Prduct Management Fundamentals
+                                p.card__name-wrapper
+                                    span.card__price $480
+                                    span.card__name  | by Marvin McKinney
+
+                        a.content__ready_to_learn-section-card.card(href="#") 
+                            img.card__picture(src="img/cards/l-alexander-li.webp", alt="", width="214", height="214")
+                            .card__main-wrapper
+                                p.card__specialty.card__specialty-hr_and_recruting HR & Recruting
+                                p.card__title HR  Management and Analytics
+                                p.card__name-wrapper
+                                    span.card__price $200
+                                    span.card__name  | by Leslie Alexander Li
+
+                        a.content__ready_to_learn-section-card.card(href="#") 
+                            img.card__picture(src="img/cards/k-watson.webp", alt="", width="214", height="214")
+                            .card__main-wrapper
+                                p.card__specialty.card__specialty-marketing Marketing
+                                p.card__title Brand Management & PR Communications
+                                p.card__name-wrapper
+                                    span.card__price $530
+                                    span.card__name  | by Kristin Watson
+
+                        a.content__ready_to_learn-section-card.card(href="#") 
+                            img.card__picture(src="img/cards/d-russel.webp", alt="", width="214", height="214")
+                            .card__main-wrapper
+                                p.card__specialty.card__specialty-management Management
+                                p.card__title Business Development Management
+                                p.card__name-wrapper
+                                    span.card__price $400
+                                    span.card__name  | by Dianne Russell
+
+                        a.content__ready_to_learn-section-card.card(href="#") 
+                            img.card__picture(src="img/cards/g-hawkins.webp", alt="", width="214", height="214")
+                            .card__main-wrapper
+                                p.card__specialty.card__specialty-design Design
+                                p.card__title Graphic Design Basic
+                                p.card__name-wrapper
+                                    span.card__price $500
+                                    span.card__name  | by Guy Hawkins
+
+            section.content__our_benefits-section.content__section 
+                .content__our_benefits-section-container.content__section-container.container
+                    h2.content__our_benefits-section-title.content__section-title
+                            p.content__section-title-small Our benefits
+                            p.content__section-title-large That’s how we do it
+
+                    .content__out_benefits-section-tabs
+                        button.tab.tab--actived
+                            include assets/var-icons/star.svg
+                            span Experienced Tutors
+                        button.tab
+                            include assets/var-icons/star.svg
+                            span Experienced Tutors
+                        button.tab
+                            include assets/var-icons/star.svg
+                            span Experienced Tutors
+                        button.tab
+                            include assets/var-icons/star.svg
+                            span Experienced Tutors
+
+
+        script(src="js/main.min.js") 

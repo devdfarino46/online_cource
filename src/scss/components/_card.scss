@@ -1,0 +1,76 @@
+.card {
+    display: flex;
+    border: 1px solid #E5E8ED;
+    border-radius: 4px;
+    box-shadow: 
+        0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+
+    &:hover {
+        box-shadow: 
+            0px 80px 80px -20px rgba(154, 156, 165, 0.16), 
+            0px 30px 24px -10px rgba(154, 156, 165, 0.1), 
+            0px 12px 10px -6px rgba(154, 156, 165, 0.08), 
+            0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    }
+}
+
+.card__picture {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.card__main-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.card__specialty {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 1px 8px;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 20px;
+}
+
+.card__name-wrapper {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.card__price {
+    font-weight: 700;
+    color: #FF4242;
+}
+
+.card__name {
+    font-weight: 400;
+    color: #787A80;
+}
+
+// Speciality colors
+.card__specialty-marketing {
+    background-color: #03CEA4;
+}
+.card__specialty-management {
+    background-color: #5A87FC;
+}
+.card__specialty-hr_and_recruting {
+    background-color: #F89828;
+}
+.card__specialty-design {
+    background-color: #F52F6E;
+}

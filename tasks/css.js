@@ -1,12 +1,11 @@
 const gulp = require('gulp');
-const bs = require('browser-sync');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 
 module.exports =  function css() {
-    return gulp.src("src/scss/**/*.scss")
+    return gulp.src(["src/scss/**/*.+(scss|css)"])
         .pipe(sass({
             outputStyle: 'compressed'
         }).on('error', sass.logError))
@@ -15,6 +14,5 @@ module.exports =  function css() {
             compatibility: 'ie9'
         }))
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest("dist/css/"))
-        .pipe(bs.stream());
+        .pipe(gulp.dest("dist/css/"));
 }

@@ -1,0 +1,27 @@
+.content__section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__section-title {
+    color: #1E212C;
+}
+
+.content__section-title-small {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.content__section-title-large {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+}
+
+@import "content-sections/who_we_are";
+@import "content-sections/ready_to_learn";
+@import "content-sections/our_benefits";

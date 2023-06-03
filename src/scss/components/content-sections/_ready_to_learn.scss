@@ -1,0 +1,38 @@
+.content__ready_to_learn-section {
+    margin-top: 180px;
+}
+
+.content__ready_to_learn-section-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.content__ready_to_learn-section-cards-wrapper {
+    margin-top: 60px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1230px) {
+    .content__ready_to_learn-section-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .content__ready_to_learn-section-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    .content__ready_to_learn-section-card {
+        flex-direction: column;
+        width: 214px;
+    }
+}
