@@ -1,0 +1,96 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.input input{
+    font-weight: 400;
+    color: #424551;
+    background: white;
+    outline: 1px solid #D7DADD;
+    border: none;
+    outline-offset: -1px;
+    padding: 0 16px;
+    border-radius: 4px;
+
+    &::placeholder {
+        color: #9A9CA5;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+    }
+
+    &:focus {
+        outline: 1px solid rgba(255, 63, 58, 0.4);
+        box-shadow: 
+            0px 80px 80px -20px rgba(255, 63, 58, 0.08), 
+            0px 30px 24px -10px rgba(255, 63, 58, 0.05), 
+            0px 12px 10px -6px rgba(255, 63, 58, 0.04), 
+            0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    }
+}
+
+.input__large {
+    input {
+        height: 52px;
+        line-height: 52px;
+        font-size: 16px;
+    }
+
+    .input__icon svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+.input__small {
+    input {
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+    }
+
+    .input__icon svg {
+        height: 16px;
+        width: 16px;
+    }
+}
+
+.input__icon {
+    position: absolute;
+    right: 16px;
+    display: flex;
+
+    svg path {
+        fill: #424551;
+    }
+}
+
+.input:has(.input__icon) {
+    &.input__large input {
+        padding-right: calc(16px * 2 + 20px);
+    }
+
+    &.input__small input {
+        padding-right: calc(16px * 2 + 16px);
+    }
+}
+
+.input--light {
+    input {
+        background: rgba(255, 255, 255, 0.12);
+        color: white;
+        outline-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .input__icon svg path {
+        fill: white;
+    }
+}
+
+.footer__copyright-wrapper {
+    
+}

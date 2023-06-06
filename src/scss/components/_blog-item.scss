@@ -1,0 +1,123 @@
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+}
+
+.blog-item__picture-wrapper {
+    position: relative;
+}
+
+.blog-item__badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 1px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #424551;
+
+    svg path {
+        fill: #424551;
+    }
+}
+
+.blog-item__picture {
+    display: flex;
+    width: 390px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.blog-item__meta {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #787A80;
+    max-height: calc(2em * 1.5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    span {
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-right: 8px;
+        }
+
+        svg path {
+            fill: #787A80;
+        }
+    }
+}
+
+.blog-item__meta-category {
+    font-weight: 700;
+}
+
+.blog-item__meta-divider {
+    width: 0;
+    height: 12px;
+    border-left: 1px solid #787A80;
+    border-radius: 100ch;
+    margin: 0 12px;
+}
+
+.blog-item__title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.blog-item__descr {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+
+.blog-item__listen-link {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+
+    svg {
+        margin-left: 8px;
+    }
+
+    svg path {
+        fill: #FF3F3A;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blog-item__picture,
+    .blog-item {
+        width: 300px;
+    }
+
+    .blog-item__meta {
+        max-height: calc(3em * 1.5);
+        span svg {
+            display: none;
+        }
+    }
+}

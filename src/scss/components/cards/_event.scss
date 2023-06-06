@@ -1,0 +1,133 @@
+.event {
+    gap: 20px 40px;
+    background-color: #FFFFFF;
+    padding: 32px 40px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    z-index: 1  ;
+
+    &:hover {
+        z-index: 2;
+        box-shadow: 
+            0px 80px 80px -20px rgba(255, 63, 58, 0.16), 
+            0px 30px 24px -10px rgba(255, 63, 58, 0.1), 
+            0px 12px 10px -6px rgba(255, 63, 58, 0.08), 
+            0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+    }
+}
+
+.event__day {
+    grid-area: day;
+}
+
+.event__month {
+    grid-area: month;
+}
+
+.event__hours {
+    grid-area: hours;
+}
+
+.event__time-wrapper {
+    display: grid;
+    grid-template-areas: 
+        "day month" 
+        "day hours";
+    gap: 4px 20px;
+}
+
+.event__info-wrapper {
+    display: grid;
+    row-gap: 4px;
+}
+
+.event__day {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #FF3F3A;
+}
+
+.event__month {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+}
+
+.event__hours {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+}
+
+.event__info {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: calc(1em * 1.5);
+}
+
+.event__category {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+}
+
+@media screen and (max-width: 940px) {
+    .event {
+        padding: 24px;
+        max-width: calc(390px - 24px * 2);
+        display: flex;
+        flex-direction: column;
+        height: calc(323px - 24px * 2);
+    }
+
+    .event__time-wrapper {
+        display: grid;
+        grid-template-areas: none;
+    }
+
+    .event__day {
+        grid-column: 1;
+    }
+
+    .event__month {
+        grid-column: 1;
+        margin-left: 3ex;
+    }
+
+    .event__day,
+    .event__month {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        color: #FF3F3A;
+        grid-row: 1;
+    }
+
+    .event__hours {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .event__info {
+        font-size: 18px;
+        overflow: auto;
+        max-height: calc(3em * 1.5);
+        white-space: normal;
+        text-overflow: ellipsis;
+    }
+
+    .event__view_more-btn {
+        margin-top: auto;
+    }
+}

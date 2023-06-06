@@ -2,12 +2,12 @@ doctype html
 html(lang="en")
     head
         meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="libs/normalize.min.css")
-        link(rel="stylesheet", href="fonts/google/fonts.css")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="libs/normalize.min.css")
+        link(rel="stylesheet" href="fonts/google/fonts.css")
 
-        link(rel="stylesheet", href="css/main.min.css")
+        link(rel="stylesheet" href="css/main.min.css")
         title Online Cource
     body
         nav.nav.nav--light
@@ -15,7 +15,7 @@ html(lang="en")
                 button.nav__open_menu-btn
                     include assets/var-icons/open-menu.svg
 
-                img.nav__logo.logo(src="img/logo.svg", alt="CREATEX", width="130px", height="22px")
+                img.nav__logo.logo(src="img/logo.svg" alt="CREATEX" width="130" height="22")
 
                 ul.nav__links-wrapper 
                     li.nav__links-item
@@ -41,7 +41,7 @@ html(lang="en")
                 .header__main-wrapper
                     .header__main-play_video-wrapper
                         button.play-btn-small.play-btn
-                            img(src="img/icons/play-btn.svg", alt="Play video", width="52", height="52")
+                            img(src="img/icons/play-btn.svg" alt="Play video" width="52" height="52")
                         p.header__main-play_video-label Play showreel
                     h1.header__main-title Enjoy studying with Createx Online Courses
                     .header__main-buttons-wrapper
@@ -49,65 +49,65 @@ html(lang="en")
                             span About us
                         button.btn__solid.btn__large.btn 
                             span Explore courses
-                
+
                 .header__statistics-wrapper 
                     p.header__statistics-item
                         span.header__statistics-item-num 1200
                         | Students graduated
-                    img.header__statistics-ellipse(src="img/icons/ellipse.svg", alt="", width="8", height="8")
+                    img.header__statistics-ellipse(src="img/icons/ellipse.svg" alt="" width="8" height="8")
                     p.header__statistics-item
                         span.header__statistics-item-num 84
                         | Completed courses
-                    img.header__statistics-ellipse(src="img/icons/ellipse.svg", alt="", width="8", height="8")
+                    img.header__statistics-ellipse(src="img/icons/ellipse.svg" alt="" width="8" height="8")
                     p.header__statistics-item
                         span.header__statistics-item-num 16
                         | Qualified tutors
-                    img.header__statistics-ellipse(src="img/icons/ellipse.svg", alt="", width="8", height="8")
+                    img.header__statistics-ellipse(src="img/icons/ellipse.svg" alt="" width="8" height="8")
                     p.header__statistics-item
                         span.header__statistics-item-num 5
                         | Years of experience
 
         main.content
-            section.content__who_we_are-section.content__section
-                .content__who_we_are-section-container.content__section-container.container
-                    picture.content__who_we_are-section-picture
-                        source(media="(max-width: 1180px)", srcset="img/women-work@515px.webp")
-                        img(src="img/women-work.webp", alt="", width="705", height="560")
-                    .content__who_we_are-section-main-wrapper
-                        h2.content__section-title
-                            p.content__section-title-small Who we are
+            section.content__about.content__section
+                .content__about-container.content__section-container.container
+                    picture.content__about-picture
+                        source(media="(max-width: 1180px)" srcset="img/women-work@515px.webp")
+                        img(src="img/women-work.webp" alt="" width="705" height="560")
+                    .content__about-main-wrapper
+                        .content__section-title
+                            h2.content__section-title-small Who we are
                             p.content__section-title-large Why Createx?
 
-                        ul.content__who_we_are-section-list 
-                            li.content__who_we_are-section-item
+                        ul.content__about-list 
+                            li.content__about-item
                                 span A fermentum in morbi pretium aliquam adipiscing donec tempus.
-                            li.content__who_we_are-section-item
+                            li.content__about-item
                                 span Vulputate placerat amet pulvinar lorem nisl.
-                            li.content__who_we_are-section-item
+                            li.content__about-item
                                 span Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
-                            li.content__who_we_are-section-item
+                            li.content__about-item
                                 span Etiam duis lobortis in fames ultrices commodo nibh.
-                            li.content__who_we_are-section-item
+                            li.content__about-item
                                 span Tincidunt sagittis neque sem ac eget.
-                            li.content__who_we_are-section-item
+                            li.content__about-item
                                 span Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
 
                         button.btn__solid.btn 
                             span More about us
 
-            section.content__ready_to_learn-section.content__section
-                .content__ready_to_learn-section-container.content__section-container.container
-                    .content__ready_to_learn-section-title-wrapper
-                        h2.content__section-title
-                            p.content__section-title-small Who we are
+            section.content__cources.content__section
+                .content__cources-container.content__section-container.container
+                    .content__cources-title-wrapper
+                        .content__section-title
+                            h2.content__section-title-small Who we are
                             p.content__section-title-large Why Createx?
 
                         button.btn__outline.btn__large.btn 
                             span View all courses
 
-                    .content__ready_to_learn-section-cards-wrapper
-                        a.content__ready_to_learn-section-card.card(href="#") 
-                            img.card__picture(src="img/cards/j-bell.webp", alt="", width="214", height="214")
+                    .content__cources-cards-wrapper
+                        a.content__cources-card.card(href="#") 
+                            img.card__picture(src="img/cards/j-bell.webp" alt="" width="214" height="214")
                             .card__main-wrapper
                                 p.card__specialty.card__specialty-marketing Marketing
                                 p.card__title The Ultimate Google Ads Training Course
@@ -115,8 +115,8 @@ html(lang="en")
                                     span.card__price $100
                                     span.card__name  | by Jerome Bell
 
-                        a.content__ready_to_learn-section-card.card(href="#") 
-                            img.card__picture(src="img/cards/m-mckiney.webp", alt="", width="214", height="214")
+                        a.content__cources-card.card(href="#") 
+                            img.card__picture(src="img/cards/m-mckiney.webp" alt="" width="214" height="214")
                             .card__main-wrapper
                                 p.card__specialty.card__specialty-management Management
                                 p.card__title Prduct Management Fundamentals
@@ -124,8 +124,8 @@ html(lang="en")
                                     span.card__price $480
                                     span.card__name  | by Marvin McKinney
 
-                        a.content__ready_to_learn-section-card.card(href="#") 
-                            img.card__picture(src="img/cards/l-alexander-li.webp", alt="", width="214", height="214")
+                        a.content__cources-card.card(href="#") 
+                            img.card__picture(src="img/cards/l-alexander-li.webp" alt="" width="214" height="214")
                             .card__main-wrapper
                                 p.card__specialty.card__specialty-hr_and_recruting HR & Recruting
                                 p.card__title HR  Management and Analytics
@@ -133,8 +133,8 @@ html(lang="en")
                                     span.card__price $200
                                     span.card__name  | by Leslie Alexander Li
 
-                        a.content__ready_to_learn-section-card.card(href="#") 
-                            img.card__picture(src="img/cards/k-watson.webp", alt="", width="214", height="214")
+                        a.content__cources-card.card(href="#") 
+                            img.card__picture(src="img/cards/k-watson.webp" alt="" width="214" height="214")
                             .card__main-wrapper
                                 p.card__specialty.card__specialty-marketing Marketing
                                 p.card__title Brand Management & PR Communications
@@ -142,8 +142,8 @@ html(lang="en")
                                     span.card__price $530
                                     span.card__name  | by Kristin Watson
 
-                        a.content__ready_to_learn-section-card.card(href="#") 
-                            img.card__picture(src="img/cards/d-russel.webp", alt="", width="214", height="214")
+                        a.content__cources-card.card(href="#") 
+                            img.card__picture(src="img/cards/d-russel.webp" alt="" width="214" height="214")
                             .card__main-wrapper
                                 p.card__specialty.card__specialty-management Management
                                 p.card__title Business Development Management
@@ -151,8 +151,8 @@ html(lang="en")
                                     span.card__price $400
                                     span.card__name  | by Dianne Russell
 
-                        a.content__ready_to_learn-section-card.card(href="#") 
-                            img.card__picture(src="img/cards/g-hawkins.webp", alt="", width="214", height="214")
+                        a.content__cources-card.card(href="#") 
+                            img.card__picture(src="img/cards/g-hawkins.webp" alt="" width="214" height="214")
                             .card__main-wrapper
                                 p.card__specialty.card__specialty-design Design
                                 p.card__title Graphic Design Basic
@@ -160,25 +160,457 @@ html(lang="en")
                                     span.card__price $500
                                     span.card__name  | by Guy Hawkins
 
-            section.content__our_benefits-section.content__section 
-                .content__our_benefits-section-container.content__section-container.container
-                    h2.content__our_benefits-section-title.content__section-title
-                            p.content__section-title-small Our benefits
-                            p.content__section-title-large That’s how we do it
+            section.content__benefits.content__section 
+                .content__benefits-container.content__section-container.container
+                    .content__benefits-title.content__section-title
+                        h2.content__section-title-small Our benefits
+                        p.content__section-title-large That’s how we do it
 
-                    .content__out_benefits-section-tabs
-                        button.tab.tab--actived
+                    .content__benefits-tabs
+                        button.content__benefits-tab.tab.tab--actived
                             include assets/var-icons/star.svg
                             span Experienced Tutors
-                        button.tab
-                            include assets/var-icons/star.svg
-                            span Experienced Tutors
-                        button.tab
-                            include assets/var-icons/star.svg
-                            span Experienced Tutors
-                        button.tab
-                            include assets/var-icons/star.svg
-                            span Experienced Tutors
+                        button.content__benefits-tab.tab
+                            include assets/var-icons/like.svg
+                            span Feedback & Support
+                        button.content__benefits-tab.tab
+                            include assets/var-icons/layouts.svg
+                            span 24/7 Online Library
+                        button.content__benefits-tab.tab
+                            include assets/var-icons/chat.svg
+                            span Community
 
+                    .content__benefits-main-wrapper
+                        .content__benefits-main-text-wrapper
+                            p.content__benefits-main-title Only practicing tutors
+                            p.content__benefits-main-descr 
+                                | Urna nisi, arcu cras nunc. Aenean quam est lobortis 
+                                | mi non fames dictum suspendisse. Morbi mauris cras 
+                                | massa ut dolor quis sociis mollis augue. Nunc, 
+                                | sodales tortor sit diam mi amet massa. Fermentum 
+                                | diam diam sociis vestibulum. Nulla nisl accumsan, 
+                                | id dignissim massa ut amet. Amet enim, 
+                                | nisi tempus vehicula.
+                        img.content__benefits-main-illustration(src="img/practicing-illustration.svg", alt="", width="600", height="440")
+
+            section.content__events.content__section
+                .content__events-container.content__section-container.container
+                    .content__events-title.content__section-title
+                        h2.content__section-title-small Our Events
+                        p.content__section-title-large Lectures & workshops
+
+                    .content__events-main-wrapper 
+                        .event
+                            .event__time-wrapper
+                                p.event__day 05
+                                p.event__month August 
+                                p.event__hours 11:00 – 14:00
+                            .event__info-wrapper
+                                p.event__info
+                                    | Formation of the organizational structure 
+                                    | of the company in the face of uncertainty
+                                p.event__category Onine master-class
+                            button.event__view_more-btn.btn__outline.btn
+                                span View more
+
+                        .event
+                            .event__time-wrapper
+                                p.event__day 24
+                                p.event__month July
+                                p.event__hours 11:00 – 12:30
+                            .event__info-wrapper
+                                p.event__info
+                                    | Building a customer service department. 
+                                    | Best Practices.
+                                p.event__category Onine lecture
+                            button.event__view_more-btn.btn__outline.btn
+                                span View more
+
+                        .event
+                            .event__time-wrapper
+                                p.event__day 16
+                                p.event__month July
+                                p.event__hours 10:00 – 13:00
+                            .event__info-wrapper
+                                p.event__info
+                                    | How to apply methods of speculative 
+                                    | design in practice. Worldbuilding 
+                                    | prototyping.
+                                p.event__category Onine workshop
+                            button.event__view_more-btn.btn__outline.btn
+                                span View more
+                        
+                    .content__events-more-wrapper
+                        p.cotnent__events-more-text Do you want more?
+                        button.btn__solid.btn__large.btn
+                                span Explore all events
+
+            section.content__certificate.content__section
+                .content__certificate-container.content__section-container.container
+                    .content__certificate-main-wrapper
+                        .content__section-title
+                            h2.content__section-title-small Createx Certificate
+                            p.content__section-title-large Your expertise will be confirmed
+                        .content__certificate-descr
+                            | We are accredited by international professional 
+                            | organizations and institutes:
+                        .content__certificate-logos
+                            img.content__certificate-logo(src="img/del-mar-strategy-logo.webp", alt="", width="105", height="50")
+                            img.content__certificate-logo(src="img/sentinal-consulting-logo.webp", alt="", width="105", height="50")
+                            img.content__certificate-logo(src="img/national-health-logo.webp", alt="", width="105", height="50")
+
+                    img.content__certificate-picture(src="img/certificate.webp", alt="", width="705", height="500")
+
+            section.content__team.content__section
+                .content__team-container.content__section-container.container
+                    .content__team-title-wrapper
+                        .content__section-title
+                            h2.content__section-title-small Best tutors are all here
+                            p.content__section-title-large Meet our team
+                        .content__team-slider-controls-wrapper
+                            button.slider-control-btn
+                                include assets/var-icons/left.svg
+                            button.slider-control-btn
+                                include assets/var-icons/right.svg
+
+                    .content__team-slider-wrapper
+                        .team
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/d-russell.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Dianne Russell
+                            p.team__specialty Founder and CEO
+
+                        .team
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/j-bell.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Jerome Bell
+                            p.team__specialty Founder and Program Director
+
+                        .team
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/k-watson.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Kristin Watson
+                            p.team__specialty Marketer, Curator of Marketing Course
+
+                        .team
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/m-mckinney.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Marvin McKinney
+                            p.team__specialty PM, Curator of Management Course
+
+                        .team 
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/j-bell.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Jerome Bell
+                            p.team__specialty Founder and Program Director
+                        
+                        .team
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/k-watson.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Kristin Watson
+                            p.team__specialty Marketer, Curator of Marketing Course
+                        
+                        .team
+                            .team__picture-wrapper
+                                img.team__picture(src="img/teams/d-russell.webp", alt="", width="245", height="320")
+                                .team__socials
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/facebook.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/instagram.svg
+                                    a.team__social-link(href="#")
+                                        include assets/var-icons/linked-in.svg
+                            p.team__name Dianne Russell
+                            p.team__specialty Founder and CEO
+
+            section.content__testimonials.content__section 
+                .content__testimonials-container.content__section-container.container
+                    .content__testimonials-title.content__section-title
+                        h2.content__section-title-small TESTIMONIALS
+                        p.content__section-title-large What our students say
+
+                    .content__testimonials-slider
+                        button.content__testimonials-prev-btn.slider-control-btn
+                            include assets/var-icons/left.svg
+
+                        .content__testimonials-this-background
+                            .content__testimonials-this-wrapper
+                                .testimonial
+                                    img.testimonial__braces(src="img/icons/braces.svg", alt="", width="28", height="20")
+                                    .testimonial-review-wrapper
+                                        p.testimonial-review
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                            | elit. Justo, amet lectus quam viverra mus lobortis 
+                                            |fermentum amet, eu. Pulvinar eu sed purus facilisi. 
+                                            | Vitae id turpis tempus ornare turpis quis non. 
+                                            | Congue tortor in euismod vulputate etiam eros. 
+                                            | Pulvinar neque pharetra arcu diam maecenas diam 
+                                            | integer in.
+                                        .testimonial__user-profile
+                                            img.testimonial__user-profile-picture(src="img/students/e-pena.webp", alt="")
+                                            .testimonial__user-profile-name-wrapper
+                                                p.testimonial__user-profile-name Eleanor Pena
+                                                p.testimonial__user-profile-category Position, Course
+
+                                .testimonial
+                                    img.testimonial__braces(src="img/icons/braces.svg", alt="", width="28", height="20")
+                                    .testimonial-review-wrapper
+                                        p.testimonial-review
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                            | elit. Justo, amet lectus quam viverra mus lobortis 
+                                            |fermentum amet, eu. Pulvinar eu sed purus facilisi. 
+                                            | Vitae id turpis tempus ornare turpis quis non. 
+                                            | Congue tortor in euismod vulputate etiam eros. 
+                                            | Pulvinar neque pharetra arcu diam maecenas diam 
+                                            | integer in.
+                                        .testimonial__user-profile
+                                            img.testimonial__user-profile-picture(src="img/students/e-pena.webp", alt="")
+                                            .testimonial__user-profile-name-wrapper
+                                                p.testimonial__user-profile-name Eleanor Pena
+                                                p.testimonial__user-profile-category Position, Course
+
+                                .testimonial
+                                    img.testimonial__braces(src="img/icons/braces.svg", alt="", width="28", height="20")
+                                    .testimonial-review-wrapper
+                                        p.testimonial-review
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                            | elit. Justo, amet lectus quam viverra mus lobortis 
+                                            |fermentum amet, eu. Pulvinar eu sed purus facilisi. 
+                                            | Vitae id turpis tempus ornare turpis quis non. 
+                                            | Congue tortor in euismod vulputate etiam eros. 
+                                            | Pulvinar neque pharetra arcu diam maecenas diam 
+                                            | integer in.
+                                        .testimonial__user-profile
+                                            img.testimonial__user-profile-picture(src="img/students/e-pena.webp", alt="")
+                                            .testimonial__user-profile-name-wrapper
+                                                p.testimonial__user-profile-name Eleanor Pena
+                                                p.testimonial__user-profile-category Position, Course
+
+                        button.content__testimonials-next-btn.slider-control-btn
+                            include assets/var-icons/right.svg
+
+                        .content__testimonials-slider-dots-wrapper
+                            .content__testimonials-slider-dot.content__testimonials-slider-dot--this
+                            .content__testimonials-slider-dot
+                            .content__testimonials-slider-dot
+                            .content__testimonials-slider-dot
+                            .content__testimonials-slider-dot
+
+            section.content__blog.content__section
+                .content__blog-container.content__section-container.container
+                    .content__blog-title-wrapper
+                        .content__section-title
+                            h2.content__section-title-small Our blog
+                            p.content__section-title-large Latest posts
+                        button.btn__solid.btn__large.btn
+                            span Go to blog
+
+                    .content__blog-main-wrapper
+                        .blog-item
+                            .blog-item__picture-wrapper
+                                p.blog-item__badge
+                                    include assets/var-icons/mic.svg
+                                    span Podcast
+                                img.blog-item__picture(src="img/blogs/podcast.webp", alt="", width="300", height="230")
+                            p.blog-item__meta
+                                span.blog-item__meta-category Marketing
+                                span.blog-item__meta-divider
+                                span
+                                    include assets/var-icons/calendar.svg
+                                    span September 4, 2020
+                                span.blog-item__meta-divider
+                                span
+                                    include assets/var-icons/clock.svg
+                                    span 36 min
+                            p.blog-item__title
+                                | What is traffic arbitrage and does it really make money?
+                            p.blog-item__descr
+                                | Pharetra, ullamcorper iaculis viverra parturient sed id 
+                                | sed. Convallis proin dignissim lacus, purus gravida...
+                            a.blog-item__listen-link(href="#") 
+                                span Listen
+                                include assets/var-icons/right.svg
+                        .blog-item
+                            .blog-item__picture-wrapper
+                                p.blog-item__badge
+                                    include assets/var-icons/play.svg
+                                    span Video
+                                img.blog-item__picture(src="img/blogs/video.webp", alt="", width="300", height="230")
+                            p.blog-item__meta
+                                span.blog-item__meta-category Management
+                                span.blog-item__meta-divider
+                                span
+                                    include assets/var-icons/calendar.svg
+                                    span August 25, 2020
+                                span.blog-item__meta-divider
+                                span
+                                    include assets/var-icons/clock.svg
+                                    span 45 min
+                            p.blog-item__title
+                                | What to do and who to talk to if you want to get 
+                                | feedback on the product
+                            p.blog-item__descr
+                                | Neque a, senectus consectetur odio in aliquet nec 
+                                | eu. Ultricies ac nibh urna urna sagittis faucibus...
+                            a.blog-item__listen-link(href="#") 
+                                span Watch
+                                include assets/var-icons/right.svg
+                        .blog-item
+                            .blog-item__picture-wrapper
+                                p.blog-item__badge
+                                    include assets/var-icons/files.svg
+                                    span Article
+                                img.blog-item__picture(src="img/blogs/article.webp", alt="", width="300", height="230")
+                            p.blog-item__meta
+                                span.blog-item__meta-category Design
+                                span.blog-item__meta-divider
+                                span
+                                    include assets/var-icons/calendar.svg
+                                    span August 8, 2020
+                            p.blog-item__title
+                                | Should you choose a creative profession if you are 
+                                | attracted to creativity?
+                            p.blog-item__descr
+                                | Curabitur nisl tincidunt eros venenatis vestibulum ac 
+                                | placerat. Tortor, viverra sed vulputate ultrices...
+                            a.blog-item__listen-link(href="#") 
+                                span Read
+                                include assets/var-icons/right.svg
+
+            section.content__subscribe.content__section
+                img.content__subscribe-illustration(src="img/subscribe-illustration.svg", alt="", width="354", height="246")
+                img.content__subscribe-illustration(src="img/subscribe-illustration.svg", alt="", width="354", height="246")
+                .content__subscribe-container.content__section-container.container
+                    .content__subscribe-title.content__section-title
+                        h2.content__section-title-small Don’t miss anything
+                        p.content__section-title-large  Subscribe to the Createx School announcements
+
+                    form.content__subscribe-form
+                        .content__subscribe-input.input__large.input
+                            input(type="email", placeholder="Your working email")
+                        button.content__subscribe-submut-btn.btn__solid.btn__large.btn(type="submit")
+                            span Subscribe
+
+        footer.footer
+            .footer__content-wrapper
+                .footer__content-container.container
+                    .footer__info-wrapper
+                        img.logo(src="img/logo-light.svg" alt="CREATEX" width="130" height="22")
+                        p.footer__info
+                           | Createx Online School is a leader in online studying. We have lots 
+                           | of courses and programs from the main market experts. We provide 
+                           | relevant approaches to online learning, internships and employment 
+                           | in the largest companies in the country.
+                        .footer__socials-wrapper
+                            a.footer__social-link(href="#") 
+                                include assets/var-icons/facebook.svg
+                            a.footer__social-link(href="#") 
+                                include assets/var-icons/twitter.svg
+                            a.footer__social-link(href="#") 
+                                include assets/var-icons/youtube.svg
+                            a.footer__social-link(href="#") 
+                                include assets/var-icons/telegram.svg
+                            a.footer__social-link(href="#") 
+                                include assets/var-icons/instagram.svg
+                            a.footer__social-link(href="#") 
+                                include assets/var-icons/linked-in.svg
+                        
+                    section.footer__list-wrapper.footer__section
+                        h3.footer__section-title SITE MAP
+                        ul.footer__section-list
+                            li.footer__section-list-item
+                                a(href="#") About Us
+                            li.footer__section-list-item
+                                a(href="#") Courses
+                            li.footer__section-list-item
+                                a(href="#") Events
+                            li.footer__section-list-item
+                                a(href="#") Blog
+                            li.footer__section-list-item
+                                a(href="#") Contacts
+                    section.footer__list-wrapper.footer__section
+                        h3.footer__section-title COURSES
+                        ul.footer__section-list
+                            li.footer__section-list-item
+                                a(href="#") Marketing
+                            li.footer__section-list-item
+                                a(href="#") Management
+                            li.footer__section-list-item
+                                a(href="#") HR & Recruting
+                            li.footer__section-list-item
+                                a(href="#") Design
+                            li.footer__section-list-item
+                                a(href="#") Development
+                    section.footer__list-wrapper.footer__section
+                        h3.footer__section-title CONTACT US
+                        ul.footer__section-list
+                            li.footer__section-list-item
+                                a(href="#") (405) 555-0128
+                            li.footer__section-list-item
+                                a(href="#") hello@createx.com
+
+                    .footer__sign_up-wrapper.footer__section
+                        h3.footer__section-title SIGN UP TO OUR NEWSLETTER
+                        form.footer__sign_up-form
+                            .footer__sign_up-input.input__small.input--light.input
+                                input(type="email", placeholder="Email address")
+                                button.input__submit.input__icon(type="submit")
+                                    include assets/var-icons/right.svg
+                        p.footer__sign_up-info
+                            | *Subscribe to our newsletter to receive 
+                            | communications and early updates from 
+                            | Createx SEO Agency.
+
+            .footer__copyright-wrapper
+                .footer__copyright-container.container
+                    p.footer__copyright
+                        span © All rights reserved. Made with
+                        span
+                            include assets/var-icons/heart.svg
+                        span by Createx Studio
+                    a.footer__top-link(href="#")  GO TO TOP
+                    
 
         script(src="js/main.min.js") 

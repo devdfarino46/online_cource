@@ -1,7 +1,10 @@
 .nav {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 20px 0;
+    z-index: 10;
 }
 
 .nav__container {
@@ -15,7 +18,7 @@
     display: none;
 
     svg path {
-        fill: #FF3F3A;
+        fill: #ff3f3a;
     }
 }
 
@@ -52,21 +55,21 @@
 }
 
 .nav--light {
-    background-color: #1E212C;
+    background-color: #1e212c;
 
     .nav__logo {
         content: url("../img/logo-light.svg");
     }
 
     .nav__link {
-        color: #FFFFFF;
+        color: #ffffff;
         opacity: 0.6;
     }
     .nav__cta-account-btn {
-        color: #FFFFFF;
+        color: #ffffff;
         opacity: 0.6;
         svg path {
-            fill: #FFFFFF;
+            fill: #ffffff;
         }
     }
 }
@@ -112,9 +115,12 @@
     bottom: 0;
 
     &::before {
-        content: '';
+        content: "";
         position: fixed;
-        top: 0; left: 300px; right: 0; bottom: 0;
+        top: 0;
+        left: 300px;
+        right: 0;
+        bottom: 0;
         background-color: #000000;
         opacity: 0.5;
     }
@@ -125,8 +131,7 @@
     }
 
     .nav__open_menu-btn,
-    .nav__logo
-    {
+    .nav__logo {
         display: none;
     }
 

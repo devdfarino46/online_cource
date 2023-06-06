@@ -1,8 +1,9 @@
 .tab {
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 8px;
 
     &:hover:not(.tab--actived) {
         svg path {
@@ -16,12 +17,11 @@
 }
 
 .tab svg {
-    margin-right: 8px;
     width: 16px;
     height: 16px;
 
     path {
-        fill: #9A9CA5;
+        fill: #9a9ca5;
     }
 }
 
@@ -29,18 +29,18 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-    color: #9A9CA5;
+    color: #9a9ca5;
 }
 
 .tab--actived {
-    border: 1px solid #FF3F3A;
+    border: 1px solid #ff3f3a;
     border-radius: 4px;
 
     svg path {
-        fill: #FF3F3A;
+        fill: #ff3f3a;
     }
 
     span {
-        color: #FF3F3A;
+        color: #ff3f3a;
     }
 }

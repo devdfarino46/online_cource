@@ -1,0 +1,20 @@
+.slider-control-btn {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+
+    svg path {
+        fill: #424551;
+    }
+
+    &:hover {
+        padding: 12px;
+        margin: -12px;
+        border-radius: 100ch;
+        background-color: #FF3F3A;
+
+        svg path {
+            fill: white;
+        }
+    }
+}

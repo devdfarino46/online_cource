@@ -1,17 +1,17 @@
-.content__who_we_are-section {
+.content__about {
     margin-top: 180px;
 }
 
-.content__who_we_are-section-container {
+.content__about-container {
     flex-direction: row;
     justify-content: space-between;
 }
 
-.content__who_we_are-section-picture {
+.content__about-picture {
     border-radius: 4px;
 }
 
-.content__who_we_are-section-list {
+.content__about-list {
     display: flex;
     flex-direction: column;
     max-width: 390px;
@@ -20,7 +20,7 @@
     margin-bottom: 48px;
 }
 
-.content__who_we_are-section-item {
+.content__about-item {
     display: flex;
     font-size: 16px;
     line-height: 160%;
@@ -34,14 +34,14 @@
 }
 
 @media screen and (max-width: 1180px) {
-    .content__who_we_are-section-picture {
+    .content__about-picture {
         width: 504px;
         height: auto;
     }
 }
 
 @media screen and (max-width: 980px) {
-    .content__who_we_are-section-picture {
+    .content__about-picture {
         display: none;
     }
 }

@@ -46,9 +46,13 @@ button {
 }
 
 @import "components/buttons";
+@import "components/cards";
+@import "components/team-item";
+@import "components/testimonial-item";
+@import "components/blog-item";
+@import "components/inputs";
 
 @import "components/nav";
 @import "components/header";
 @import "components/content";
-@import "components/card";
-@import "components/tab";
+@import "components/footer";

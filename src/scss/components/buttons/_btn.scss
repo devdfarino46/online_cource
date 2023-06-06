@@ -1,9 +1,10 @@
-$gradient: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+$gradient: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
 $radius: 4px;
 $width: 1px;
 
 .btn {
     display: flex;
+    justify-content: center;
     font-weight: 700;
     border-radius: $radius;
     height: 44px;
@@ -30,9 +31,9 @@ $width: 1px;
 }
 
 .btn__outline {
-    outline: 1px solid #FF3F3A;
+    outline: 1px solid #ff3f3a;
     outline-offset: -1px;
-    color: #FF3F3A;
+    color: #ff3f3a;
 
     &:hover {
         outline: none;
