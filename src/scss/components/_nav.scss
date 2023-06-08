@@ -54,6 +54,17 @@
     }
 }
 
+.nav__menu-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 300px;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
 .nav--light {
     background-color: #1e212c;
 
@@ -114,15 +125,8 @@
     width: 300px;
     bottom: 0;
 
-    &::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 300px;
-        right: 0;
-        bottom: 0;
-        background-color: #000000;
-        opacity: 0.5;
+    .nav__menu-background {
+        display: block;
     }
 
     .nav__container {
