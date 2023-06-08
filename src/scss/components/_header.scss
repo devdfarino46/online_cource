@@ -24,6 +24,7 @@
 
 .header__main-play_video-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     column-gap: 16px;
     margin-bottom: 40px;

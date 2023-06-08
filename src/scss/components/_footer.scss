@@ -9,6 +9,8 @@
 .footer__content-container {
     display: flex;
     justify-content: space-between;
+    gap: 40px 30px;
+    flex-wrap: wrap;
 }
 
 // Info
@@ -101,20 +103,15 @@
 }
 
 .footer__copyright {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    flex-wrap: wrap;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     color: #FFFFFF;
 
-    span {
-        display: flex;
-        align-items: center;
-    }
-
-    span svg {
-        margin: 0 1ex;
+    svg {
+        margin-inline: 1ex;
     }
 }
 

@@ -4,6 +4,7 @@ $width: 1px;
 
 .btn {
     display: flex;
+    white-space: nowrap;
     justify-content: center;
     font-weight: 700;
     border-radius: $radius;
