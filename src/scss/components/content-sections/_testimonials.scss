@@ -12,7 +12,7 @@
     grid-area: prev_btn;
 }
 
-.content__testimonials-this {
+.content__testimonials-this-background {
     grid-area: testimonial;
 }
 
@@ -33,7 +33,7 @@
         "dots dots dots";
     align-items: center;
     justify-content: space-between;
-    row-gap: 60px;
+    row-gap: 30px;
 }
 
 .content__testimonials-this-background {
@@ -92,15 +92,18 @@
 }
 
 @media screen and (max-width: 730px) {
-    .content__testimonials-prev-btn,
-    .content__testimonials-next-btn {
-        display: none;
-    }
 
     .content__testimonials-slider {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        grid-template-areas: 
+            "testimonial testimonial"
+            "prev_btn next_btn"
+            "dots dots";
+
+        justify-content: center;
+    }
+
+    .content__testimonials-next-btn {
+        justify-self: flex-end;
     }
 
     .content__testimonials-this-wrapper {
